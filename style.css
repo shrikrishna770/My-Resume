@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(50, 65, 36) ;
+    color: white;
+
+}
+
+header .logo{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+
+    img{
+        width:10%;
+        height: 80%;
+        filter: invert(100%);
+        border-radius: 50%;
+    }
+    h1{
+        margin-left: 10px;
+    }
+}
+
+header .option{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    .like , .sign_up ,.login{
+        display: flex;
+        margin-right: 1%;
+        width: 12%;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #666363;
+    }
+    .sign_up{
+        background-color: #76e787;
+    }
+    
+}
+
+main{
+    margin: 8vh auto;
+    width:80vw;
+    /* border: 1px solid red; */
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  
+}
+
+.resume-head{
+    /* border: 1px solid red; */
+    background-color:#918585;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+   
+    P{
+        margin: 1% 15%;
+        font-size: 60PX;
+        font-weight: 100;
+    }
+}
+
+.resume_main{
+    display: flex;
+    justify-content: right;
+    .resume-index{
+        padding: 2%;
+        top: 25vh;
+        left: 12vw;
+        width: 20%;
+        position: absolute;
+        margin: auto;
+        h2{
+            margin: 0px;
+        }
+        
+        font-size: 17px;
+        background-color:rgb(166, 200, 216);
+
+        .image{
+
+            text-align: center;
+            align-items: center;
+
+            img{
+                width:80%;
+                border-radius: 50%;
+            }
+        }
+
+        .address{
+            p{
+                margin: 3px;
+            }
+        }
+
+        .social{
+            p{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+
+
+    }
+
+    .resume_contant{
+        width: 60%;
+        padding: 20px;
+        border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        h1{
+            text-align: center;
+            margin  : 0px;
+            /* text-decoration: underline; */
+        }
+        H2{
+            width: 80%;
+            border: 1PX solid rgb(63, 59, 59);
+            text-align: center;
+            margin: 1% auto 0px auto;
+            background-color: #666363;
+        }
+        hr{
+            /* text-align: center; */
+            border: 1PX solid rgb(63, 59, 59);
+            width: 25%;
+        }
+
+        
+
+    }
+} 
+
+
+.project{
+    h3,h4,.sub{
+        margin: 3px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
