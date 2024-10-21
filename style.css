@@ -10,7 +10,6 @@ header {
     justify-content: space-between;
     background-color: rgb(50, 65, 36);
     color: white;
-
 }
 
 header .logo {
@@ -18,42 +17,39 @@ header .logo {
     display: flex;
     align-items: center;
     padding: 2px;
+}
 
-    img {
-        width: 10%;
-        height: 80%;
-        filter: invert(100%);
-        border-radius: 50%;
-    }
+header .logo img {
+    width: 10%;
+    height: 80%;
+    filter: invert(100%);
+    border-radius: 50%;
+}
 
-    h1 {
-        margin-left: 10px;
-    }
+header .logo h1 {
+    margin-left: 10px;
 }
 
 header .option {
     width: 50vw;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end; 
     align-items: center;
+}
 
-    .like,
-    .sign_up,
-    .login {
-        display: flex;
-        margin-right: 1%;
-        width: 12%;
-        height: 40px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background-color: #666363;
-    }
+header .like, .sign_up, .login {
+    display: flex;
+    margin-right: 1%;
+    width: 12%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #666363;
+}
 
-    .sign_up {
-        background-color: #76e787;
-    }
-
+header .sign_up {
+    background-color: #76e787;
 }
 
 main {
@@ -61,20 +57,19 @@ main {
     width: 80vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
-
 }
 
 .resume-head {
     background-color: #918585;
     height: 30vh;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end; 
+    align-items: flex-end;
+}
 
-    P {
-        margin: 1% 20%;
-        font-size: 60PX;
-    }
+.resume-head p {
+    margin: 1% 15%;
+    font-size: 60px; 
 }
 
 .resume_main {
@@ -83,105 +78,150 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     border: 2px solid rgb(166, 168, 166);
+}
 
-    .resume-index {
-        padding: 2%;
-        width: 30%;
-        height: 1000px;
-        margin: -120px 0px 0px 5%;
-        font-size: 15px;
-        background-color: rgb(166, 200, 216);
-        overflow: hidden;
+.resume_main .resume-index {
+    padding: 2%;
+    width: 30%;
+    height: 1000px;
+    margin: -120px 0px 0px 5%;
+    font-size: 15px;
+    background-color: rgb(166, 200, 216);
+    overflow: hidden;
+}
 
-        h2 {
-            margin: 0px;
-        }
+.resume_main .resume-index h2 {
+    margin: 0px;
+}
 
-        .image {
-            text-align: center;
-            align-items: center;
+.resume_main .resume-index .image {
+    text-align: center;
+    align-items: center;
+}
 
-            img {
-                width: 80%;
-                border-radius: 50%;
-            }
-        }
+.resume_main .resume-index .image img {
+    width: 80%;
+    border-radius: 50%;
+}
 
-        .address p {
-            margin: 5px;
-        }
+.resume_main .resume-index .address p,
+.resume_main .resume-index .social p {
+    margin: 5px;
+}
 
-        .social p {
-            margin: 8px;
+.resume_main .resume-index .social img {
+    width: 17px;
+}
 
-            img {
-                width: 17px;
-            }
-        }
+/* Resume content section */
+.resume_contant {
+    width: 63%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.resume_contant h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+.resume_contant h2 { /* Corrected from H2 to h2 */
+    width: 70%;
+    border: 1px solid rgb(63, 59, 59); /* Corrected from PX to px */
+    text-align: center;
+    margin: 1% auto 0px auto;
+    background-color: #bbbaba;
+}
+
+.resume_contant hr {
+    border: 1px solid rgb(63, 59, 59); /* Corrected from PX to px */
+    width: 25%;
+}
+
+/* Project section */
+.project h3, .project h4, .project .sub {
+    margin: 3px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo, header .option {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 95vw;
+        margin: 5vh auto;
+    }
+
+    .resume-head p {
+        font-size: 40px;
+        margin: 2% 10%;
+    }
+
+    .resume_main {
+        flex-direction: column;
+    }
+    
+    .resume_main .resume-index {
+        width: 96%;
+        margin: 0;
+        height: auto;
     }
 
     .resume_contant {
-        width: 63%;
-        padding: 40px 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: justify;
-
-        h1 {
-            text-align: center;
-            margin: 0px;
-        }
-
-        H2 {
-            width: 70%;
-            border: 1PX solid rgb(63, 59, 59);
-            text-align: center;
-            margin: 1% auto 0px auto;
-            background-color: #bbbaba;
-        }
-
-        hr {
-            border: 1PX solid rgb(63, 59, 59);
-            width: 25%;
-        }
+        width: 100%;
+        padding: 0px 0px 20px;
     }
 }
 
-
-.project {
-
-    h3,
-    h4,
-    .sub {
-        margin: 3px;
+@media screen and (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 5px;
     }
 
+    header .like, .sign_up, .login {
+        width: 30%;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .resume-head p {
+        font-size: 30px;
+        margin: 5% 10%;
+    }
+
+    .resume_main {
+        /* padding: 0 10px; */
+    }
+
+    .resume_main .resume-index {
+        width: 0%;
+        padding: 5%;
+        font-size: 14px;
+    }
+
+    .resume_main .resume-index .image img {
+        width: 60%;
+    }
+
+    .resume_contant h2 {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .resume_contant hr {
+        width: 40%;
+    }
 }
-
-/* 
-@media (max-width: 2100px) {
-    .resume-index {
-        top: 10vh;
-        left: 12vw;
-        width: 20%;
-        position: absolute;
-        margin: auto;
-        font-size: 15px;
-        background-color: rgb(166, 200, 216);
-
-        h2 {
-            margin: 0px;
-        }
-
-        .image {
-            text-align: center;
-            align-items: center;
-
-            img {
-                width: 80%;
-                border-radius: 50%;
-            }
-        }
-    }
-} */
