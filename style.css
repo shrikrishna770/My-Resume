@@ -128,25 +128,23 @@ main {
     margin: 0px;
 }
 
-.resume_contant h2 { /* Corrected from H2 to h2 */
+.resume_contant h2 { 
     width: 70%;
-    border: 1px solid rgb(63, 59, 59); /* Corrected from PX to px */
+    border: 1px solid rgb(63, 59, 59);
     text-align: center;
     margin: 1% auto 1% auto;
     background-color: #bbbaba;
 }
 
 .resume_contant hr {
-    border: 1px solid rgb(63, 59, 59); /* Corrected from PX to px */
+    border: 1px solid rgb(63, 59, 59);
     width: 25%;
 }
 
-/* Project section */
 .project h3, .project h4, .project .sub {
     margin: 3px;
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
